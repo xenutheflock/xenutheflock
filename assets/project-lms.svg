@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="340" viewBox="0 0 600 340"><style>
 text { font-family: 'Inter', 'Segoe UI', Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 .mono { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; }
-.label { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; font-size: 13px; font-weight: 700; letter-spacing: 2px; fill: #e11d2a; }
+.label { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; font-size: 13px; font-weight: 700; letter-spacing: 2px; fill: #6b6b6b; }
 .fade { animation: fade .7s ease-out backwards; }
 @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 .grow { transform-box: fill-box; transform-origin: left; animation: grow 1s cubic-bezier(.2,.8,.2,1) backwards; }
 @keyframes grow { from { transform: scaleX(0); } }
 .cursor { animation: blink 1s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
-</style><rect x="1" y="1" width="598" height="338" fill="#ffffff" stroke="#e5e5e5" stroke-width="2"/><rect x="1" y="1" width="48" height="4" fill="#e11d2a" class="grow"/>
+</style><rect x="1" y="1" width="598" height="338" fill="#ffffff" stroke="#e5e5e5" stroke-width="2"/>
 <text x="36" y="58" class="label fade">05</text>
 <text x="564" y="58" font-size="12" font-weight="700" letter-spacing="1.5" text-anchor="end" fill="#6b6b6b" class="mono fade">PRIVATE</text>
 <text x="36" y="118" font-size="30" font-weight="800" fill="#0a0a0a" letter-spacing="-.5" class="fade" style="animation-delay:.05s">Web LMS</text>

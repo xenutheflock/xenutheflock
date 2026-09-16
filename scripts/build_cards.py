@@ -97,14 +97,14 @@ MUTED = "#6b6b6b"
 TERM_BG = "#0a0a0a"
 TERM_TEXT = "#fafafa"
 TERM_LINE = "#3a3a3a"
-RED = "#e11d2a"
+RED = "#c9434b"  # accent: used sparingly (hero, "Hey there.", terminal output)
 FONT = "'Inter', 'Segoe UI', Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif"
 MONO = "'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace"
 
 BASE_CSS = f"""
 text {{ font-family: {FONT}; }}
 .mono {{ font-family: {MONO}; }}
-.label {{ font-family: {MONO}; font-size: 13px; font-weight: 700; letter-spacing: 2px; fill: {RED}; }}
+.label {{ font-family: {MONO}; font-size: 13px; font-weight: 700; letter-spacing: 2px; fill: {MUTED}; }}
 .fade {{ animation: fade .7s ease-out backwards; }}
 @keyframes fade {{ from {{ opacity: 0; transform: translateY(6px); }} to {{ opacity: 1; transform: none; }} }}
 .grow {{ transform-box: fill-box; transform-origin: left; animation: grow 1s cubic-bezier(.2,.8,.2,1) backwards; }}
@@ -131,16 +131,15 @@ def wrap(s, n):
     return lines
 
 
-def svg(w, h, body, css=""):
+def svg(w, h, body, css="", mark=False):
     if os.environ.get("STATIC"):  # preview renderers screenshot before animations run
         css += "* { animation: none !important; }"
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">'
         f"<style>{BASE_CSS}{css}</style>"
         f'<rect x="1" y="1" width="{w-2}" height="{h-2}" fill="{BG}" stroke="{BORDER}" stroke-width="2"/>'
-        # red corner mark
-        f'<rect x="1" y="1" width="48" height="4" fill="{RED}" class="grow"/>'
-        f"{body}</svg>"
+        + (f'<rect x="1" y="1" width="48" height="4" fill="{RED}" class="grow"/>' if mark else "")
+        +         f"{body}</svg>"
     )
 
 
@@ -209,7 +208,7 @@ def hero():
   <rect x="{w-184}" y="{h-36}" width="40" height="16" fill="{LINE}" class="grow" style="animation-delay:.8s"/>
 </g>
 """
-    return w, h, svg(w, h, body)
+    return w, h, svg(w, h, body, mark=True)
 
 
 def about():
@@ -229,7 +228,7 @@ def now():
         y = 108 + i * 48
         rows.append(
             f'<g class="fade" style="animation-delay:{.1 + i*.1:.2f}s">'
-            f'<rect x="36" y="{y-22}" width="3" height="36" fill="{RED if i == 0 else LINE}"/>'
+            f'<rect x="36" y="{y-22}" width="3" height="36" fill="{TEXT if i == 0 else LINE}"/>'
             f'<text x="54" y="{y-6}" font-size="11" font-weight="700" letter-spacing="1.5" fill="{MUTED}" class="mono">{esc(k.upper())}</text>'
             f'<text x="54" y="{y+13}" font-size="17" fill="{TEXT}">{esc(v)}</text></g>'
         )
@@ -275,12 +274,12 @@ def project_wide(key):
 <g class="fade" style="animation-delay:.4s">{pills(40, 270, p['tags'])}</g>
 <g class="fade" style="animation-delay:.3s">
   <rect x="{tx}" y="{ty}" width="{tw}" height="{th}" fill="{TERM_BG}" stroke="{TERM_BG}" stroke-width="1.5"/>
-  <rect x="{tx+16}" y="{ty+16}" width="12" height="12" fill="{RED}"/><rect x="{tx+34}" y="{ty+16}" width="12" height="12" fill="{TERM_LINE}"/><rect x="{tx+52}" y="{ty+16}" width="12" height="12" fill="{TERM_LINE}"/>
+  <rect x="{tx+16}" y="{ty+16}" width="12" height="12" fill="{TERM_LINE}"/><rect x="{tx+34}" y="{ty+16}" width="12" height="12" fill="{TERM_LINE}"/><rect x="{tx+52}" y="{ty+16}" width="12" height="12" fill="{TERM_LINE}"/>
   <text x="{tx+tw/2}" y="{ty+27}" font-size="13" fill="{MUTED}" text-anchor="middle" class="mono">quest — bash</text>
   <line x1="{tx}" y1="{ty+44}" x2="{tx+tw}" y2="{ty+44}" stroke="{TERM_LINE}"/>
 </g>
 {"".join(term)}
-<rect x="{tx+24}" y="{cursor_y-15}" width="10" height="19" fill="{RED}" class="cursor"/>
+<rect x="{tx+24}" y="{cursor_y-15}" width="10" height="19" fill="{TERM_TEXT}" class="cursor"/>
 """
     return w, h, svg(w, h, body, css)
 
@@ -299,7 +298,7 @@ def project_card(key, w=600, h=340):
 """
     link = p["live"] or ("view repo" if public else None)
     if link:
-        body += (f'<text x="{w-36}" y="{h-26}" font-size="13" font-weight="700" fill="{RED}" text-anchor="end" '
+        body += (f'<text x="{w-36}" y="{h-26}" font-size="13" font-weight="700" fill="{TEXT}" text-anchor="end" text-decoration="underline" '
                  f'class="mono fade" style="animation-delay:.4s">{esc(link)} →</text>')
     return w, h, svg(w, h, body)
 
@@ -310,7 +309,7 @@ def contact(slug, label, value):
 {icon_box(slug, 30, 33, 64)}
 <text x="114" y="58" font-size="12" font-weight="700" letter-spacing="2" fill="{MUTED}" class="mono">{esc(label.upper())}</text>
 <text x="114" y="86" font-size="{20 if len(value) < 20 else 17}" font-weight="700" fill="{TEXT}">{esc(value)}</text>
-<text x="{w-30}" y="72" font-size="22" fill="{RED}" text-anchor="end">→</text>
+<text x="{w-30}" y="72" font-size="22" fill="{MUTED}" text-anchor="end">→</text>
 """
     return w, h, svg(w, h, body)
 

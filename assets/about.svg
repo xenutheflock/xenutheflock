@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300"><style>
 text { font-family: 'Inter', 'Segoe UI', Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 .mono { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; }
-.label { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; font-size: 13px; font-weight: 700; letter-spacing: 2px; fill: #e11d2a; }
+.label { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; font-size: 13px; font-weight: 700; letter-spacing: 2px; fill: #6b6b6b; }
 .fade { animation: fade .7s ease-out backwards; }
 @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 .grow { transform-box: fill-box; transform-origin: left; animation: grow 1s cubic-bezier(.2,.8,.2,1) backwards; }
 @keyframes grow { from { transform: scaleX(0); } }
 .cursor { animation: blink 1s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
-</style><rect x="1" y="1" width="798" height="298" fill="#ffffff" stroke="#e5e5e5" stroke-width="2"/><rect x="1" y="1" width="48" height="4" fill="#e11d2a" class="grow"/>
+</style><rect x="1" y="1" width="798" height="298" fill="#ffffff" stroke="#e5e5e5" stroke-width="2"/>
 <text x="40" y="58" class="label fade">ABOUT</text>
-<text x="40" y="106" font-size="32" font-weight="800" fill="#0a0a0a" class="fade" style="animation-delay:.05s">Hey there<tspan fill="#e11d2a">.</tspan></text>
+<text x="40" y="106" font-size="32" font-weight="800" fill="#0a0a0a" class="fade" style="animation-delay:.05s">Hey there<tspan fill="#c9434b">.</tspan></text>
 <text x="40" y="152" font-size="19" font-weight="400" fill="#6b6b6b" class="fade" style="animation-delay:0.15s">I&#x27;m an IT student from the Philippines. I build web apps with</text><text x="40" y="182" font-size="19" font-weight="400" fill="#6b6b6b" class="fade" style="animation-delay:0.23s">TypeScript and Laravel, write small tools for Linux, and occasionally</text><text x="40" y="212" font-size="19" font-weight="400" fill="#6b6b6b" class="fade" style="animation-delay:0.31s">put 3D things in a browser. I rice my desktop more than I sleep.</text>
 </svg>
