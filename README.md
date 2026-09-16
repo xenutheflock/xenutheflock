@@ -12,9 +12,9 @@
   <img src="https://img.shields.io/github/followers/xenutheflock?label=Followers&style=for-the-badge&color=2CB67D" alt="followers" />
 </p>
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 
-## 👋 About Me
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand.png" width="32" /> About Me
 
 ```js
 const xenu = {
@@ -27,6 +27,8 @@ const xenu = {
 };
 ```
 
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
+
 ## 🛠️ Tech Stack
 
 <p align="center">
@@ -34,6 +36,8 @@ const xenu = {
   <br/><br/>
   <img src="https://skillicons.dev/icons?i=linux,fedora,git,github,vercel,docker,vscode,arduino,blender&perline=10" />
 </p>
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 
 ## 🚀 Featured Projects
 
@@ -86,7 +90,13 @@ const xenu = {
 
 <!-- ADD MORE PROJECTS: copy one <td>...</td> block above and change the link, title, description and badges -->
 
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
+
 ## 📊 GitHub Stats
+
+<p align="center">
+  <img width="100%" src="https://raw.githubusercontent.com/xenutheflock/xenutheflock/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3D contribution graph" />
+</p>
 
 <p align="center">
   <img height="170" src="https://github-readme-stats.vercel.app/api?username=xenutheflock&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true" />
@@ -100,6 +110,16 @@ const xenu = {
 <p align="center">
   <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=xenutheflock&theme=react-dark&hide_border=true&area=true" />
 </p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xenutheflock/xenutheflock/output/github-snake.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/xenutheflock/xenutheflock/output/github-snake-light.svg" />
+    <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/xenutheflock/xenutheflock/output/github-snake.svg" />
+  </picture>
+</p>
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 
 ## 📫 Connect With Me
 
