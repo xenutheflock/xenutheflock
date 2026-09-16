@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="360" viewBox="0 0 1200 360"><style>
+text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+.mono { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; }
+.label { font-size: 13px; font-weight: 700; letter-spacing: 2px; fill: #737aa2; }
+.fade { animation: fade .7s ease-out backwards; }
+@keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+.blob { transform-box: fill-box; transform-origin: center; }
+.b1 { animation: drift1 14s ease-in-out infinite alternate; }
+.b2 { animation: drift2 18s ease-in-out infinite alternate; }
+.b3 { animation: drift3 16s ease-in-out infinite alternate; }
+@keyframes drift1 { to { transform: translate(140px, 60px) scale(1.25); } }
+@keyframes drift2 { to { transform: translate(-160px, -40px) scale(.85); } }
+@keyframes drift3 { to { transform: translate(-80px, 70px) scale(1.2); } }
+.cursor { animation: blink 1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+</style><rect x="1" y="1" width="1198" height="358" rx="22" fill="#1a1b27" stroke="#2e3150" stroke-width="2"/>
+<defs>
+  <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="60"/></filter>
+  <clipPath id="clip"><rect x="1" y="1" width="1198" height="358" rx="22"/></clipPath>
+  <linearGradient id="name" x1="0" x2="1"><stop offset="0" stop-color="#70a5fd"/><stop offset=".55" stop-color="#bf91f3"/><stop offset="1" stop-color="#38bdae"/></linearGradient>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity=".035"/></pattern>
+</defs>
+<g clip-path="url(#clip)">
+  <g filter="url(#blur)" opacity=".55">
+    <circle class="blob b1" cx="880" cy="90" r="150" fill="#bf91f3"/>
+    <circle class="blob b2" cx="1080" cy="280" r="140" fill="#70a5fd"/>
+    <circle class="blob b3" cx="700" cy="300" r="110" fill="#38bdae"/>
+  </g>
+  <rect width="1200" height="360" fill="url(#grid)"/>
+</g>
+<text x="64" y="84" class="label fade mono">~/xenutheflock</text>
+<text x="60" y="190" font-size="120" font-weight="800" fill="url(#name)" letter-spacing="-3" class="fade" style="animation-delay:.1s">xenu</text>
+<rect x="330" y="108" width="14" height="92" rx="3" fill="#38bdae" class="cursor"/>
+<text x="64" y="240" font-size="26" font-weight="500" fill="#c0caf5" class="fade" style="animation-delay:0.25s">IT Student · Web Developer · Linux Tinkerer</text>
+<g class="fade" style="animation-delay:.4s"><rect x="64" y="272" width="137" height="32" rx="16.0" fill="#70a5fd" fill-opacity=".12" stroke="#70a5fd" stroke-opacity=".45"/><text x="132.5" y="293.25" font-size="15" fill="#70a5fd" text-anchor="middle" font-weight="600">📍 Philippines</text><rect x="211" y="272" width="189" height="32" rx="16.0" fill="#70a5fd" fill-opacity=".12" stroke="#70a5fd" stroke-opacity=".45"/><text x="305.5" y="293.25" font-size="15" fill="#70a5fd" text-anchor="middle" font-weight="600">🐧 Fedora + Hyprland</text><rect x="410" y="272" width="145" height="32" rx="16.0" fill="#70a5fd" fill-opacity=".12" stroke="#70a5fd" stroke-opacity=".45"/><text x="482.5" y="293.25" font-size="15" fill="#70a5fd" text-anchor="middle" font-weight="600">🎓 BSIT student</text></g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="340" viewBox="0 0 600 340"><style>
+text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+.mono { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; }
+.label { font-size: 13px; font-weight: 700; letter-spacing: 2px; fill: #737aa2; }
+.fade { animation: fade .7s ease-out backwards; }
+@keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+</style><rect x="1" y="1" width="598" height="338" rx="22" fill="#1a1b27" stroke="#2e3150" stroke-width="2"/>
+<defs><radialGradient id="g" cx="1" cy="0" r="1"><stop offset="0" stop-color="#38bdae" stop-opacity=".28"/><stop offset="1" stop-color="#38bdae" stop-opacity="0"/></radialGradient>
+<clipPath id="c"><rect x="1" y="1" width="598" height="338" rx="22"/></clipPath></defs>
+<rect width="600" height="340" fill="url(#g)" clip-path="url(#c)"/>
+<rect x="36" y="36" width="56" height="56" rx="14" fill="#38bdae" fill-opacity=".15" stroke="#38bdae" stroke-opacity=".5" class="fade"/>
+<text x="64" y="74" font-size="28" text-anchor="middle" class="fade">💸</text>
+<text x="36" y="136" font-size="28" font-weight="800" fill="#c0caf5" class="fade" style="animation-delay:.05s">DTR Salary Calculator</text>
+<text x="36" y="172" font-size="16" font-weight="400" fill="#737aa2" class="fade" style="animation-delay:0.12s">Mobile-first salary calculator with OCR. Snap your daily</text><text x="36" y="197" font-size="16" font-weight="400" fill="#737aa2" class="fade" style="animation-delay:0.20s">time record, get your pay.</text>
+<g class="fade" style="animation-delay:.3s"><rect x="36" y="248" width="99" height="26" rx="13.0" fill="#38bdae" fill-opacity=".12" stroke="#38bdae" stroke-opacity=".45"/><text x="85.5" y="265.55" font-size="13" fill="#38bdae" text-anchor="middle" font-weight="600">TypeScript</text><rect x="143" y="248" width="46" height="26" rx="13.0" fill="#38bdae" fill-opacity=".12" stroke="#38bdae" stroke-opacity=".45"/><text x="166.0" y="265.55" font-size="13" fill="#38bdae" text-anchor="middle" font-weight="600">OCR</text><rect x="197" y="248" width="69" height="26" rx="13.0" fill="#38bdae" fill-opacity=".12" stroke="#38bdae" stroke-opacity=".45"/><text x="231.5" y="265.55" font-size="13" fill="#38bdae" text-anchor="middle" font-weight="600">Mobile</text></g>
+<text x="36" y="310" font-size="13" font-weight="600" fill="#38bdae" class="fade" style="animation-delay:.4s">● open source</text>
+<text x="564" y="310" font-size="13" font-weight="700" fill="#38bdae" text-anchor="end" class="fade" style="animation-delay:.4s">↗ dtr-calculator-five.vercel.app</text></svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="300" viewBox="0 0 400 300"><style>
+text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+.mono { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; }
+.label { font-size: 13px; font-weight: 700; letter-spacing: 2px; fill: #737aa2; }
+.fade { animation: fade .7s ease-out backwards; }
+@keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+.bar { transform-box: fill-box; transform-origin: left; animation: grow 1.2s ease-out backwards; }
+@keyframes grow { from { transform: scaleY(0); } }
+</style><rect x="1" y="1" width="398" height="298" rx="22" fill="#1a1b27" stroke="#2e3150" stroke-width="2"/><text x="36" y="54" class="label fade">RIGHT NOW</text><g class="fade" style="animation-delay:0.10s"><rect x="36" y="82" width="4" height="36" rx="2" fill="#70a5fd" class="bar"/><text x="54" y="98" font-size="12" font-weight="700" letter-spacing="1.5" fill="#70a5fd">LEARNING</text><text x="54" y="117" font-size="17" fill="#c0caf5">TypeScript · Laravel</text></g><g class="fade" style="animation-delay:0.20s"><rect x="36" y="130" width="4" height="36" rx="2" fill="#bf91f3" class="bar"/><text x="54" y="146" font-size="12" font-weight="700" letter-spacing="1.5" fill="#bf91f3">AUTOMATING</text><text x="54" y="165" font-size="17" fill="#c0caf5">Python scripts</text></g><g class="fade" style="animation-delay:0.30s"><rect x="36" y="178" width="4" height="36" rx="2" fill="#38bdae" class="bar"/><text x="54" y="194" font-size="12" font-weight="700" letter-spacing="1.5" fill="#38bdae">BUILDING</text><text x="54" y="213" font-size="17" fill="#c0caf5">TakeNote</text></g><g class="fade" style="animation-delay:0.40s"><rect x="36" y="226" width="4" height="36" rx="2" fill="#e0af68" class="bar"/><text x="54" y="242" font-size="12" font-weight="700" letter-spacing="1.5" fill="#e0af68">RUNNING</text><text x="54" y="261" font-size="17" fill="#c0caf5">Fedora + Hyprland</text></g></svg>
