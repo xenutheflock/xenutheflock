@@ -17,28 +17,32 @@ CACHE = ROOT / "scripts" / ".icon-cache"
 # ---------------------------------------------------------------- DATA
 
 NAME = "xenu"
-ROLE = "IT Student · Web Developer · Linux"
-CHIPS = ["Philippines", "Fedora + Hyprland", "BSIT student"]
+ROLE = "BSIT Student · Full Stack Developer · Linux"
+CHIPS = ["Philippines", "Fedora + Hyprland"]
 
 ABOUT = (
-    "I'm an IT student from the Philippines. I build web apps with "
-    "TypeScript and Laravel, write small tools for Linux, and occasionally "
-    "put 3D things in a browser. I rice my desktop more than I sleep."
+    "I'm a BSIT student from the Philippines and a full stack developer. I build "
+    "web apps with TypeScript, React, and Laravel, write small tools for Linux, "
+    "and I rice my desktop more than I sleep."
 )
 
 NOW = [
     ("Learning", "TypeScript · Laravel"),
     ("Automating", "Python scripts"),
-    ("Building", "TakeNote"),
+    ("Building", "GeoCrimeMap"),
     ("Running", "Fedora + Hyprland"),
 ]
 
-# icon names are simple-icons slugs: https://simpleicons.org
+# (simple-icons slug, label). slug None = text badge. Slugs: https://simpleicons.org
 STACK = [
-    ("Languages", ["typescript", "javascript", "php", "python", "c", "gnubash"]),
-    ("Frameworks", ["nextdotjs", "react", "laravel", "tailwindcss", "nodedotjs"]),
-    ("Data", ["postgresql", "mysql", "supabase", "sqlite"]),
-    ("Tools & OS", ["git", "docker", "vercel", "visualstudiocode", "neovim", "fedora", "linux", "blender", "arduino"]),
+    ("Frontend", [("html5", "HTML5"), ("css", "CSS3"), ("vite", "Vite"), ("typescript", "TypeScript"),
+                  ("react", "React"), ("nextdotjs", "Next.js"), ("tailwindcss", "Tailwind")]),
+    ("Backend", [("php", "PHP"), ("laravel", "Laravel"), ("nodedotjs", "Node.js"), ("express", "Express"),
+                 (None, "REST API")]),
+    ("Dev Tools", [("git", "Git"), ("github", "GitHub"), ("docker", "Docker"), ("visualstudiocode", "VS Code"),
+                   ("linux", "Linux"), ("postman", "Postman"), ("npm", "npm"), ("composer", "Composer")]),
+    ("Database", [("postgresql", "PostgreSQL"), ("mysql", "MySQL"), ("mongodb", "MongoDB")]),
+    ("Deployment", [("vercel", "Vercel"), ("supabase", "Supabase")]),
 ]
 
 # status: "public" | "private" ; live: url or None. Numbering follows this order.
@@ -180,13 +184,18 @@ def icon_path(slug):
     return f.read_text()
 
 
-def icon_box(slug, x, y, size, extra=""):
-    """Outlined square with a white simple-icons glyph (24x24 viewBox) centered in it."""
+def icon_box(slug, x, y, size, extra="", text="{ }"):
+    """Outlined square with a simple-icons glyph (24x24 viewBox) centered in it, or `text` when slug is None."""
     g = size * 0.5
     off = (size - g) / 2
+    if slug is None:
+        inner = (f'<text x="{x + size/2}" y="{y + size/2 + 6}" font-size="17" font-weight="700" fill="{TEXT}" '
+                 f'text-anchor="middle" class="mono">{esc(text)}</text>')
+    else:
+        inner = f'<g transform="translate({x+off} {y+off}) scale({g/24:.4f})" fill="{TEXT}"><path d="{icon_path(slug)}"/></g>'
     return (
         f'<g {extra}><rect x="{x}" y="{y}" width="{size}" height="{size}" fill="none" stroke="{BORDER}" stroke-width="1.5"/>'
-        f'<g transform="translate({x+off} {y+off}) scale({g/24:.4f})" fill="{TEXT}"><path d="{icon_path(slug)}"/></g></g>'
+        f"{inner}</g>"
     )
 
 
@@ -238,17 +247,22 @@ def now():
 
 
 def stack():
-    w, h = 1200, 330
-    size, gap = 52, 12
+    size, gap, row_h = 52, 16, 124
+    rows = (len(STACK) + 1) // 2
+    w, h = 1200, 96 + rows * row_h + 10
     out = ['<text x="40" y="58" class="label fade">STACK</text>']
-    col_x = [40, 460]
+    col_x = [40, 610]
     for i, (group, icons) in enumerate(STACK):
         x0 = col_x[i % 2]
-        y0 = 96 + (i // 2) * 116
+        y0 = 96 + (i // 2) * row_h
         out.append(f'<text x="{x0}" y="{y0 + 4}" font-size="13" font-weight="700" fill="{MUTED}" class="mono fade" style="animation-delay:{i*.1:.1f}s">{esc(group.upper())}</text>')
-        for j, slug in enumerate(icons):
-            out.append(icon_box(slug, x0 + j*(size+gap), y0 + 20, size,
-                                extra=f'class="fade" style="animation-delay:{.15 + i*.1 + j*.05:.2f}s"'))
+        for j, (slug, label) in enumerate(icons):
+            x = x0 + j * (size + gap)
+            out.append(
+                f'<g class="fade" style="animation-delay:{.15 + i*.1 + j*.05:.2f}s">'
+                + icon_box(slug, x, y0 + 20, size)
+                + f'<text x="{x + size/2}" y="{y0 + 20 + size + 18}" font-size="10" fill="{MUTED}" text-anchor="middle" class="mono">{esc(label)}</text></g>'
+            )
     return w, h, svg(w, h, "".join(out))
 
 

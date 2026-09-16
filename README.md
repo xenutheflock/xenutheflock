@@ -6,16 +6,16 @@
 -->
 
 <p align="center">
-  <img src="assets/hero.svg?v=a47ab705" width="100%" alt="xenu — IT Student · Web Developer · Linux" />
+  <img src="assets/hero.svg?v=a6235a07" width="100%" alt="xenu — BSIT Student · Full Stack Developer · Linux" />
 </p>
 
 <p align="center">
-  <img src="assets/about.svg?v=fcda9be0" width="65.8%" alt="About" />
-  <img src="assets/now.svg?v=5c153b21" width="32.9%" alt="Right now" />
+  <img src="assets/about.svg?v=23b83930" width="65.8%" alt="About" />
+  <img src="assets/now.svg?v=16b03dff" width="32.9%" alt="Right now" />
 </p>
 
 <p align="center">
-  <img src="assets/stack.svg?v=cefacd47" width="100%" alt="Stack: TypeScript, JavaScript, PHP, Python, C, Bash, Next.js, React, Laravel, Tailwind, Node, PostgreSQL, MySQL, Supabase, SQLite, Git, Docker, Vercel, VS Code, Neovim, Fedora, Linux, Blender, Arduino" />
+  <img src="assets/stack.svg?v=48ede12b" width="100%" alt="Stack: HTML5, CSS3, Vite, TypeScript, React, Next.js, Tailwind CSS, PHP, Laravel, Node.js, Express, REST API, Git, GitHub, Docker, VS Code, Linux, Postman, npm, Composer, PostgreSQL, MySQL, MongoDB, Vercel, Supabase" />
 </p>
 
 <p align="center">

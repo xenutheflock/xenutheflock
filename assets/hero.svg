@@ -15,8 +15,8 @@ text { font-family: 'Inter', 'Segoe UI', Ubuntu, 'Helvetica Neue', Helvetica, Ar
 <text x="58" y="196" font-size="128" font-weight="800" fill="#fafafa" letter-spacing="-5" class="fade" style="animation-delay:.1s">xenu</text>
 <rect x="356" y="174" width="22" height="22" fill="#c9434b" class="cursor"/>
 <rect x="64" y="226" width="120" height="3" fill="#c9434b" class="grow" style="animation-delay:.3s"/>
-<text x="64" y="270" font-size="26" font-weight="500" fill="#fafafa" class="fade" style="animation-delay:0.25s">IT Student · Web Developer · Linux</text>
-<g class="fade" style="animation-delay:.4s"><rect x="64" y="294" width="116" height="32" fill="none" stroke="#3a3a3a"/><text x="122.0" y="314.9" font-size="14" fill="#8a8a8a" text-anchor="middle" font-weight="600">Philippines</text><rect x="190" y="294" width="166" height="32" fill="none" stroke="#3a3a3a"/><text x="273.0" y="314.9" font-size="14" fill="#8a8a8a" text-anchor="middle" font-weight="600">Fedora + Hyprland</text><rect x="366" y="294" width="124" height="32" fill="none" stroke="#3a3a3a"/><text x="428.0" y="314.9" font-size="14" fill="#8a8a8a" text-anchor="middle" font-weight="600">BSIT student</text></g>
+<text x="64" y="270" font-size="26" font-weight="500" fill="#fafafa" class="fade" style="animation-delay:0.25s">BSIT Student · Full Stack Developer · Linux</text>
+<g class="fade" style="animation-delay:.4s"><rect x="64" y="294" width="116" height="32" fill="none" stroke="#3a3a3a"/><text x="122.0" y="314.9" font-size="14" fill="#8a8a8a" text-anchor="middle" font-weight="600">Philippines</text><rect x="190" y="294" width="166" height="32" fill="none" stroke="#3a3a3a"/><text x="273.0" y="314.9" font-size="14" fill="#8a8a8a" text-anchor="middle" font-weight="600">Fedora + Hyprland</text></g>
 <g class="fade" style="animation-delay:.5s">
   <rect x="1016" y="280" width="120" height="16" fill="#c9434b" class="grow" style="animation-delay:.5s"/>
   <rect x="1016" y="302" width="80" height="16" fill="#fafafa" class="grow" style="animation-delay:.65s"/>
