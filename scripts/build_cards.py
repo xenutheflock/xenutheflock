@@ -3,6 +3,7 @@
 
 Edit the DATA section, then run:  python3 scripts/build_cards.py
 """
+import hashlib
 import html
 import os
 import pathlib
@@ -333,6 +334,16 @@ def main():
     for name, (_, _, data) in tiles.items():
         (OUT / f"{name}.svg").write_text(data, encoding="utf-8")
         print("wrote", f"assets/{name}.svg")
+    bust_cache(ROOT / "README.md", "assets")
+
+
+def bust_cache(readme, folder):
+    """Point README image links at ?v=<content hash> so browsers drop cached old versions."""
+    def repl(m):
+        digest = hashlib.sha1((ROOT / m.group(1)).read_bytes()).hexdigest()[:8]
+        return f'src="{m.group(1)}?v={digest}"'
+    text = readme.read_text(encoding="utf-8")
+    readme.write_text(re.sub(rf'src="({folder}/[^"?]+\.svg)(?:\?v=[0-9a-f]*)?"', repl, text), encoding="utf-8")
 
 
 if __name__ == "__main__":

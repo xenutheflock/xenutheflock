@@ -2,8 +2,11 @@
 """Copy the tokyonight summary cards to profile-summary-card-output/minimal/ in the profile palette."""
 import pathlib
 import re
+import sys
 
-ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from build_cards import ROOT, bust_cache  # noqa: E402
+
 SRC = ROOT / "profile-summary-card-output" / "tokyonight"
 DST = ROOT / "profile-summary-card-output" / "minimal"
 
@@ -23,3 +26,5 @@ for name in ("3-stats.svg", "4-productive-time.svg"):
     s = re.sub(r'\b(rx|ry)="\d+"', r'\1="0"', s)
     (DST / name).write_text(s)
     print("wrote", DST.relative_to(ROOT) / name)
+
+bust_cache(ROOT / "README.md", "profile-summary-card-output")
