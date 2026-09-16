@@ -6,7 +6,7 @@
 -->
 
 <p align="center">
-  <img src="assets/hero.svg" width="100%" alt="xenu — IT Student · Web Developer · Linux Tinkerer" />
+  <img src="assets/hero.svg" width="100%" alt="xenu — IT Student · Web Developer · Linux" />
 </p>
 
 <p align="center">
