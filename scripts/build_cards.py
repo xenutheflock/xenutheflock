@@ -27,9 +27,9 @@ ABOUT = (
 )
 
 NOW = [
+    ("Building", "GeoCrimeMap"),
     ("Learning", "TypeScript · Laravel"),
     ("Automating", "Python scripts"),
-    ("Building", "GeoCrimeMap"),
     ("Running", "Fedora + Hyprland"),
 ]
 
@@ -41,7 +41,7 @@ STACK = [
                  (None, "REST API")]),
     ("Dev Tools", [("git", "Git"), ("github", "GitHub"), ("docker", "Docker"), ("visualstudiocode", "VS Code"),
                    ("linux", "Linux"), ("postman", "Postman"), ("npm", "npm"), ("composer", "Composer")]),
-    ("Database", [("postgresql", "PostgreSQL"), ("mysql", "MySQL"), ("mongodb", "MongoDB")]),
+    ("Database", [("postgresql", "PostgreSQL"), ("mysql", "MySQL")]),
     ("Deployment", [("vercel", "Vercel"), ("supabase", "Supabase")]),
 ]
 
