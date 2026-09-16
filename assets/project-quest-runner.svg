@@ -1,29 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="340" viewBox="0 0 1200 340"><style>
-text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340"><style>
+text { font-family: 'Inter', 'Segoe UI', Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 .mono { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; }
-.label { font-size: 13px; font-weight: 700; letter-spacing: 2px; fill: #737aa2; }
+.label { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; font-size: 13px; font-weight: 700; letter-spacing: 2px; fill: #e11d2a; }
 .fade { animation: fade .7s ease-out backwards; }
 @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
-
-.typing { animation: pop .1s linear backwards; }
-@keyframes pop { from { opacity: 0; } }
+.grow { transform-box: fill-box; transform-origin: left; animation: grow 1s cubic-bezier(.2,.8,.2,1) backwards; }
+@keyframes grow { from { transform: scaleX(0); } }
 .cursor { animation: blink 1s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
-</style><rect x="1" y="1" width="1198" height="338" rx="22" fill="#1a1b27" stroke="#2e3150" stroke-width="2"/>
-<defs><linearGradient id="glow" x1="0" x2="1"><stop offset="0" stop-color="#70a5fd" stop-opacity=".18"/><stop offset="1" stop-color="#70a5fd" stop-opacity="0"/></linearGradient></defs>
-<rect x="2" y="2" width="600" height="336" rx="20" fill="url(#glow)"/>
-<text x="40" y="54" class="label fade">FEATURED PROJECT</text>
-<rect x="40" y="80" width="56" height="56" rx="14" fill="#70a5fd" fill-opacity=".15" stroke="#70a5fd" stroke-opacity=".5" class="fade"/>
-<text x="68" y="118" font-size="28" text-anchor="middle" class="fade">🎮</text>
-<text x="112" y="120" font-size="34" font-weight="800" fill="#c0caf5" class="fade" style="animation-delay:.05s">Quest Runner</text>
-<text x="40" y="176" font-size="17" font-weight="400" fill="#737aa2" class="fade" style="animation-delay:0.15s">Complete Discord play quests on Linux without installing</text><text x="40" y="202" font-size="17" font-weight="400" fill="#737aa2" class="fade" style="animation-delay:0.23s">the game. Spawns a tiny idle process with the right name</text><text x="40" y="228" font-size="17" font-weight="400" fill="#737aa2" class="fade" style="animation-delay:0.31s">so Discord counts the time. Works with native and Flatpak</text><text x="40" y="254" font-size="17" font-weight="400" fill="#737aa2" class="fade" style="animation-delay:0.39s">Discord.</text>
-<g class="fade" style="animation-delay:.4s"><rect x="40" y="270" width="69" height="28" rx="14.0" fill="#70a5fd" fill-opacity=".12" stroke="#70a5fd" stroke-opacity=".45"/><text x="74.5" y="288.55" font-size="13" fill="#70a5fd" text-anchor="middle" font-weight="600">Python</text><rect x="117" y="270" width="31" height="28" rx="14.0" fill="#70a5fd" fill-opacity=".12" stroke="#70a5fd" stroke-opacity=".45"/><text x="132.5" y="288.55" font-size="13" fill="#70a5fd" text-anchor="middle" font-weight="600">C</text><rect x="156" y="270" width="54" height="28" rx="14.0" fill="#70a5fd" fill-opacity=".12" stroke="#70a5fd" stroke-opacity=".45"/><text x="183.0" y="288.55" font-size="13" fill="#70a5fd" text-anchor="middle" font-weight="600">GTK4</text><rect x="218" y="270" width="61" height="28" rx="14.0" fill="#70a5fd" fill-opacity=".12" stroke="#70a5fd" stroke-opacity=".45"/><text x="248.5" y="288.55" font-size="13" fill="#70a5fd" text-anchor="middle" font-weight="600">Shell</text></g>
+.pop { animation: pop .1s linear backwards; } @keyframes pop { from { opacity: 0; } }</style><rect x="1" y="1" width="1198" height="338" fill="#0a0a0a" stroke="#262626" stroke-width="2"/><rect x="1" y="1" width="48" height="4" fill="#e11d2a" class="grow"/>
+<text x="40" y="58" class="label fade">01 / FEATURED</text>
+<text x="40" y="118" font-size="40" font-weight="800" fill="#fafafa" letter-spacing="-1" class="fade" style="animation-delay:.05s">Quest Runner</text>
+<text x="40" y="166" font-size="17" font-weight="400" fill="#8a8a8a" class="fade" style="animation-delay:0.15s">Complete Discord play quests on Linux without installing</text><text x="40" y="192" font-size="17" font-weight="400" fill="#8a8a8a" class="fade" style="animation-delay:0.23s">the game. Spawns a tiny idle process with the right name</text><text x="40" y="218" font-size="17" font-weight="400" fill="#8a8a8a" class="fade" style="animation-delay:0.31s">so Discord counts the time. Works with native and Flatpak</text><text x="40" y="244" font-size="17" font-weight="400" fill="#8a8a8a" class="fade" style="animation-delay:0.39s">Discord.</text>
+<g class="fade" style="animation-delay:.4s"><rect x="40" y="270" width="70" height="28" fill="none" stroke="#3a3a3a"/><text x="75.0" y="288.55" font-size="13" fill="#fafafa" text-anchor="middle" font-weight="600">Python</text><rect x="118" y="270" width="31" height="28" fill="none" stroke="#3a3a3a"/><text x="133.5" y="288.55" font-size="13" fill="#fafafa" text-anchor="middle" font-weight="600">C</text><rect x="157" y="270" width="55" height="28" fill="none" stroke="#3a3a3a"/><text x="184.5" y="288.55" font-size="13" fill="#fafafa" text-anchor="middle" font-weight="600">GTK4</text><rect x="220" y="270" width="63" height="28" fill="none" stroke="#3a3a3a"/><text x="251.5" y="288.55" font-size="13" fill="#fafafa" text-anchor="middle" font-weight="600">Shell</text></g>
 <g class="fade" style="animation-delay:.3s">
-  <rect x="640" y="50" width="520" height="240" rx="14" fill="#11121d" stroke="#2e3150"/>
-  <circle cx="662" cy="72" r="6" fill="#ff5f57"/><circle cx="682" cy="72" r="6" fill="#febc2e"/><circle cx="702" cy="72" r="6" fill="#28c840"/>
-  <text x="900.0" y="77" font-size="13" fill="#737aa2" text-anchor="middle" class="mono">quest — bash</text>
-  <line x1="640" y1="94" x2="1160" y2="94" stroke="#2e3150"/>
+  <rect x="640" y="50" width="520" height="240" fill="#000000" stroke="#262626" stroke-width="1.5"/>
+  <rect x="656" y="66" width="12" height="12" fill="#e11d2a"/><rect x="674" y="66" width="12" height="12" fill="#3a3a3a"/><rect x="692" y="66" width="12" height="12" fill="#3a3a3a"/>
+  <text x="900.0" y="77" font-size="13" fill="#8a8a8a" text-anchor="middle" class="mono">quest — bash</text>
+  <line x1="640" y1="94" x2="1160" y2="94" stroke="#262626"/>
 </g>
-<text x="664" y="134" font-size="16" fill="#c0caf5" class="mono typing" style="animation-delay:0.6s">$ quest search terraria</text><text x="664" y="166" font-size="16" fill="#c0caf5" class="mono typing" style="animation-delay:1.2s">$ quest run terraria -m 16</text><text x="664" y="198" font-size="16" fill="#38bdae" class="mono typing" style="animation-delay:1.8s">▶ Playing Terraria · auto-stop in 16m</text><text x="664" y="230" font-size="16" fill="#c0caf5" class="mono typing" style="animation-delay:2.4s">$ quest status</text>
-<rect x="664" y="247" width="10" height="19" fill="#70a5fd" class="cursor"/>
+<text x="664" y="134" font-size="16" fill="#fafafa" class="mono pop" style="animation-delay:0.6s">$ quest search terraria</text><text x="664" y="166" font-size="16" fill="#fafafa" class="mono pop" style="animation-delay:1.2s">$ quest run terraria -m 16</text><text x="664" y="198" font-size="16" fill="#e11d2a" class="mono pop" style="animation-delay:1.8s">▶ Playing Terraria · auto-stop in 16m</text><text x="664" y="230" font-size="16" fill="#fafafa" class="mono pop" style="animation-delay:2.4s">$ quest status</text>
+<rect x="664" y="247" width="10" height="19" fill="#e11d2a" class="cursor"/>
 </svg>

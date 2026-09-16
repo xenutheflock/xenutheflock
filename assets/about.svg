@@ -1,11 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="300" viewBox="0 0 800 300"><style>
-text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300"><style>
+text { font-family: 'Inter', 'Segoe UI', Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 .mono { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; }
-.label { font-size: 13px; font-weight: 700; letter-spacing: 2px; fill: #737aa2; }
+.label { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; font-size: 13px; font-weight: 700; letter-spacing: 2px; fill: #e11d2a; }
 .fade { animation: fade .7s ease-out backwards; }
 @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
-</style><rect x="1" y="1" width="798" height="298" rx="22" fill="#1a1b27" stroke="#2e3150" stroke-width="2"/>
-<text x="40" y="54" class="label fade">ABOUT</text>
-<text x="40" y="100" font-size="30" font-weight="700" fill="#c0caf5" class="fade" style="animation-delay:.05s">Hey there 👋</text>
-<text x="40" y="146" font-size="19" font-weight="400" fill="#737aa2" class="fade" style="animation-delay:0.15s">I&#x27;m an IT student from the Philippines. I build web apps with</text><text x="40" y="176" font-size="19" font-weight="400" fill="#737aa2" class="fade" style="animation-delay:0.23s">TypeScript and Laravel, write small tools for Linux, and occasionally</text><text x="40" y="206" font-size="19" font-weight="400" fill="#737aa2" class="fade" style="animation-delay:0.31s">put 3D things in a browser. I rice my desktop more than I sleep.</text>
+.grow { transform-box: fill-box; transform-origin: left; animation: grow 1s cubic-bezier(.2,.8,.2,1) backwards; }
+@keyframes grow { from { transform: scaleX(0); } }
+.cursor { animation: blink 1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+</style><rect x="1" y="1" width="798" height="298" fill="#0a0a0a" stroke="#262626" stroke-width="2"/><rect x="1" y="1" width="48" height="4" fill="#e11d2a" class="grow"/>
+<text x="40" y="58" class="label fade">ABOUT</text>
+<text x="40" y="106" font-size="32" font-weight="800" fill="#fafafa" class="fade" style="animation-delay:.05s">Hey there<tspan fill="#e11d2a">.</tspan></text>
+<text x="40" y="152" font-size="19" font-weight="400" fill="#8a8a8a" class="fade" style="animation-delay:0.15s">I&#x27;m an IT student from the Philippines. I build web apps with</text><text x="40" y="182" font-size="19" font-weight="400" fill="#8a8a8a" class="fade" style="animation-delay:0.23s">TypeScript and Laravel, write small tools for Linux, and occasionally</text><text x="40" y="212" font-size="19" font-weight="400" fill="#8a8a8a" class="fade" style="animation-delay:0.31s">put 3D things in a browser. I rice my desktop more than I sleep.</text>
 </svg>
