@@ -89,11 +89,14 @@ CONTACTS = [
 
 # ---------------------------------------------------------------- THEME
 
-BG = "#0a0a0a"
-BORDER = "#262626"
-LINE = "#3a3a3a"
-TEXT = "#fafafa"
-MUTED = "#8a8a8a"
+BG = "#ffffff"
+BORDER = "#e5e5e5"
+LINE = "#d4d4d4"
+TEXT = "#0a0a0a"
+MUTED = "#6b6b6b"
+TERM_BG = "#0a0a0a"
+TERM_TEXT = "#fafafa"
+TERM_LINE = "#3a3a3a"
 RED = "#e11d2a"
 FONT = "'Inter', 'Segoe UI', Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif"
 MONO = "'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace"
@@ -192,7 +195,7 @@ def icon_box(slug, x, y, size, extra=""):
 def hero():
     w, h = 1200, 360
     body = f"""
-<defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".04"/></pattern></defs>
+<defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#000000" stroke-opacity=".05"/></pattern></defs>
 <rect x="2" y="2" width="{w-4}" height="{h-4}" fill="url(#grid)"/>
 <text x="64" y="84" class="label fade">~/xenutheflock</text>
 <text x="58" y="196" font-size="128" font-weight="800" fill="{TEXT}" letter-spacing="-5" class="fade" style="animation-delay:.1s">{esc(NAME)}</text>
@@ -260,7 +263,7 @@ def project_wide(key):
     term = []
     for i, line in enumerate(p.get("terminal", [])):
         term.append(
-            f'<text x="{tx+24}" y="{ty+84 + i*32}" font-size="16" fill="{RED if line.startswith("▶") else TEXT}" '
+            f'<text x="{tx+24}" y="{ty+84 + i*32}" font-size="16" fill="{RED if line.startswith("▶") else TERM_TEXT}" '
             f'class="mono pop" style="animation-delay:{.6 + i*.6:.1f}s">{esc(line)}</text>'
         )
     cursor_y = ty + 84 + len(term) * 32
@@ -271,10 +274,10 @@ def project_wide(key):
 {text_lines(wrap(p['desc'], 58), 40, 166, 17, 26, fill=MUTED, delay=.15)}
 <g class="fade" style="animation-delay:.4s">{pills(40, 270, p['tags'])}</g>
 <g class="fade" style="animation-delay:.3s">
-  <rect x="{tx}" y="{ty}" width="{tw}" height="{th}" fill="#000000" stroke="{BORDER}" stroke-width="1.5"/>
-  <rect x="{tx+16}" y="{ty+16}" width="12" height="12" fill="{RED}"/><rect x="{tx+34}" y="{ty+16}" width="12" height="12" fill="{LINE}"/><rect x="{tx+52}" y="{ty+16}" width="12" height="12" fill="{LINE}"/>
+  <rect x="{tx}" y="{ty}" width="{tw}" height="{th}" fill="{TERM_BG}" stroke="{TERM_BG}" stroke-width="1.5"/>
+  <rect x="{tx+16}" y="{ty+16}" width="12" height="12" fill="{RED}"/><rect x="{tx+34}" y="{ty+16}" width="12" height="12" fill="{TERM_LINE}"/><rect x="{tx+52}" y="{ty+16}" width="12" height="12" fill="{TERM_LINE}"/>
   <text x="{tx+tw/2}" y="{ty+27}" font-size="13" fill="{MUTED}" text-anchor="middle" class="mono">quest — bash</text>
-  <line x1="{tx}" y1="{ty+44}" x2="{tx+tw}" y2="{ty+44}" stroke="{BORDER}"/>
+  <line x1="{tx}" y1="{ty+44}" x2="{tx+tw}" y2="{ty+44}" stroke="{TERM_LINE}"/>
 </g>
 {"".join(term)}
 <rect x="{tx+24}" y="{cursor_y-15}" width="10" height="19" fill="{RED}" class="cursor"/>

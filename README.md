@@ -52,9 +52,5 @@
 </p>
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xenutheflock/xenutheflock/output/github-snake.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/xenutheflock/xenutheflock/output/github-snake-light.svg" />
-    <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/xenutheflock/xenutheflock/output/github-snake.svg" width="100%" />
-  </picture>
+  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/xenutheflock/xenutheflock/output/github-snake-light.svg" width="100%" />
 </p>

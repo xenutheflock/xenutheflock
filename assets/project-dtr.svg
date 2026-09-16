@@ -8,11 +8,11 @@ text { font-family: 'Inter', 'Segoe UI', Ubuntu, 'Helvetica Neue', Helvetica, Ar
 @keyframes grow { from { transform: scaleX(0); } }
 .cursor { animation: blink 1s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
-</style><rect x="1" y="1" width="598" height="338" fill="#0a0a0a" stroke="#262626" stroke-width="2"/><rect x="1" y="1" width="48" height="4" fill="#e11d2a" class="grow"/>
+</style><rect x="1" y="1" width="598" height="338" fill="#ffffff" stroke="#e5e5e5" stroke-width="2"/><rect x="1" y="1" width="48" height="4" fill="#e11d2a" class="grow"/>
 <text x="36" y="58" class="label fade">03</text>
-<text x="564" y="58" font-size="12" font-weight="700" letter-spacing="1.5" text-anchor="end" fill="#fafafa" class="mono fade">OPEN SOURCE</text>
-<text x="36" y="118" font-size="30" font-weight="800" fill="#fafafa" letter-spacing="-.5" class="fade" style="animation-delay:.05s">DTR Salary Calculator</text>
-<text x="36" y="158" font-size="16" font-weight="400" fill="#8a8a8a" class="fade" style="animation-delay:0.12s">Mobile-first salary calculator with OCR. Snap your daily</text><text x="36" y="183" font-size="16" font-weight="400" fill="#8a8a8a" class="fade" style="animation-delay:0.20s">time record, get your pay.</text>
-<g class="fade" style="animation-delay:.3s"><rect x="36" y="240" width="96" height="26" fill="none" stroke="#3a3a3a"/><text x="84.0" y="257.2" font-size="12" fill="#fafafa" text-anchor="middle" font-weight="600">TypeScript</text><rect x="140" y="240" width="45" height="26" fill="none" stroke="#3a3a3a"/><text x="162.5" y="257.2" font-size="12" fill="#fafafa" text-anchor="middle" font-weight="600">OCR</text><rect x="193" y="240" width="67" height="26" fill="none" stroke="#3a3a3a"/><text x="226.5" y="257.2" font-size="12" fill="#fafafa" text-anchor="middle" font-weight="600">Mobile</text></g>
-<line x1="36" y1="286" x2="564" y2="286" stroke="#262626"/>
+<text x="564" y="58" font-size="12" font-weight="700" letter-spacing="1.5" text-anchor="end" fill="#0a0a0a" class="mono fade">OPEN SOURCE</text>
+<text x="36" y="118" font-size="30" font-weight="800" fill="#0a0a0a" letter-spacing="-.5" class="fade" style="animation-delay:.05s">DTR Salary Calculator</text>
+<text x="36" y="158" font-size="16" font-weight="400" fill="#6b6b6b" class="fade" style="animation-delay:0.12s">Mobile-first salary calculator with OCR. Snap your daily</text><text x="36" y="183" font-size="16" font-weight="400" fill="#6b6b6b" class="fade" style="animation-delay:0.20s">time record, get your pay.</text>
+<g class="fade" style="animation-delay:.3s"><rect x="36" y="240" width="96" height="26" fill="none" stroke="#d4d4d4"/><text x="84.0" y="257.2" font-size="12" fill="#0a0a0a" text-anchor="middle" font-weight="600">TypeScript</text><rect x="140" y="240" width="45" height="26" fill="none" stroke="#d4d4d4"/><text x="162.5" y="257.2" font-size="12" fill="#0a0a0a" text-anchor="middle" font-weight="600">OCR</text><rect x="193" y="240" width="67" height="26" fill="none" stroke="#d4d4d4"/><text x="226.5" y="257.2" font-size="12" fill="#0a0a0a" text-anchor="middle" font-weight="600">Mobile</text></g>
+<line x1="36" y1="286" x2="564" y2="286" stroke="#e5e5e5"/>
 <text x="564" y="314" font-size="13" font-weight="700" fill="#e11d2a" text-anchor="end" class="mono fade" style="animation-delay:.4s">dtr-calculator-five.vercel.app →</text></svg>

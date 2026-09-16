@@ -8,8 +8,8 @@ text { font-family: 'Inter', 'Segoe UI', Ubuntu, 'Helvetica Neue', Helvetica, Ar
 @keyframes grow { from { transform: scaleX(0); } }
 .cursor { animation: blink 1s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
-</style><rect x="1" y="1" width="798" height="298" fill="#0a0a0a" stroke="#262626" stroke-width="2"/><rect x="1" y="1" width="48" height="4" fill="#e11d2a" class="grow"/>
+</style><rect x="1" y="1" width="798" height="298" fill="#ffffff" stroke="#e5e5e5" stroke-width="2"/><rect x="1" y="1" width="48" height="4" fill="#e11d2a" class="grow"/>
 <text x="40" y="58" class="label fade">ABOUT</text>
-<text x="40" y="106" font-size="32" font-weight="800" fill="#fafafa" class="fade" style="animation-delay:.05s">Hey there<tspan fill="#e11d2a">.</tspan></text>
-<text x="40" y="152" font-size="19" font-weight="400" fill="#8a8a8a" class="fade" style="animation-delay:0.15s">I&#x27;m an IT student from the Philippines. I build web apps with</text><text x="40" y="182" font-size="19" font-weight="400" fill="#8a8a8a" class="fade" style="animation-delay:0.23s">TypeScript and Laravel, write small tools for Linux, and occasionally</text><text x="40" y="212" font-size="19" font-weight="400" fill="#8a8a8a" class="fade" style="animation-delay:0.31s">put 3D things in a browser. I rice my desktop more than I sleep.</text>
+<text x="40" y="106" font-size="32" font-weight="800" fill="#0a0a0a" class="fade" style="animation-delay:.05s">Hey there<tspan fill="#e11d2a">.</tspan></text>
+<text x="40" y="152" font-size="19" font-weight="400" fill="#6b6b6b" class="fade" style="animation-delay:0.15s">I&#x27;m an IT student from the Philippines. I build web apps with</text><text x="40" y="182" font-size="19" font-weight="400" fill="#6b6b6b" class="fade" style="animation-delay:0.23s">TypeScript and Laravel, write small tools for Linux, and occasionally</text><text x="40" y="212" font-size="19" font-weight="400" fill="#6b6b6b" class="fade" style="animation-delay:0.31s">put 3D things in a browser. I rice my desktop more than I sleep.</text>
 </svg>
