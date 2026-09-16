@@ -8,11 +8,11 @@ SRC = ROOT / "profile-summary-card-output" / "tokyonight"
 DST = ROOT / "profile-summary-card-output" / "minimal"
 
 COLORS = {
-    'stroke="#1a1b27"': 'stroke="#e5e5e5"',  # card border
-    "#1a1b27": "#ffffff",  # background
-    "#70a5fd": "#0a0a0a",  # title
-    "#bf91f3": "#262626",  # icons / bars
-    "#38bdae": "#6b6b6b",  # text / axes
+    'stroke="#1a1b27"': 'stroke="#262626"',  # card border
+    "#1a1b27": "#0a0a0a",  # background
+    "#70a5fd": "#fafafa",  # title
+    "#bf91f3": "#737373",  # icons / bars
+    "#38bdae": "#8a8a8a",  # text / axes
 }
 
 DST.mkdir(exist_ok=True)

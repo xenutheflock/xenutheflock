@@ -1,25 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360"><style>
 text { font-family: 'Inter', 'Segoe UI', Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 .mono { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; }
-.label { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; font-size: 13px; font-weight: 700; letter-spacing: 2px; fill: #6b6b6b; }
+.label { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; font-size: 13px; font-weight: 700; letter-spacing: 2px; fill: #8a8a8a; }
 .fade { animation: fade .7s ease-out backwards; }
 @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 .grow { transform-box: fill-box; transform-origin: left; animation: grow 1s cubic-bezier(.2,.8,.2,1) backwards; }
 @keyframes grow { from { transform: scaleX(0); } }
 .cursor { animation: blink 1s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
-</style><rect x="1" y="1" width="1198" height="358" fill="#ffffff" stroke="#e5e5e5" stroke-width="2"/><rect x="1" y="1" width="48" height="4" fill="#c9434b" class="grow"/>
-<defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#000000" stroke-opacity=".05"/></pattern></defs>
+</style><rect x="1" y="1" width="1198" height="358" fill="#0a0a0a" stroke="#262626" stroke-width="2"/><rect x="1" y="1" width="48" height="4" fill="#c9434b" class="grow"/>
+<defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".04"/></pattern></defs>
 <rect x="2" y="2" width="1196" height="356" fill="url(#grid)"/>
 <text x="64" y="84" class="label fade">~/xenutheflock</text>
-<text x="58" y="196" font-size="128" font-weight="800" fill="#0a0a0a" letter-spacing="-5" class="fade" style="animation-delay:.1s">xenu</text>
+<text x="58" y="196" font-size="128" font-weight="800" fill="#fafafa" letter-spacing="-5" class="fade" style="animation-delay:.1s">xenu</text>
 <rect x="356" y="174" width="22" height="22" fill="#c9434b" class="cursor"/>
 <rect x="64" y="226" width="120" height="3" fill="#c9434b" class="grow" style="animation-delay:.3s"/>
-<text x="64" y="270" font-size="26" font-weight="500" fill="#0a0a0a" class="fade" style="animation-delay:0.25s">IT Student · Web Developer · Linux</text>
-<g class="fade" style="animation-delay:.4s"><rect x="64" y="294" width="116" height="32" fill="none" stroke="#d4d4d4"/><text x="122.0" y="314.9" font-size="14" fill="#6b6b6b" text-anchor="middle" font-weight="600">Philippines</text><rect x="190" y="294" width="166" height="32" fill="none" stroke="#d4d4d4"/><text x="273.0" y="314.9" font-size="14" fill="#6b6b6b" text-anchor="middle" font-weight="600">Fedora + Hyprland</text><rect x="366" y="294" width="124" height="32" fill="none" stroke="#d4d4d4"/><text x="428.0" y="314.9" font-size="14" fill="#6b6b6b" text-anchor="middle" font-weight="600">BSIT student</text></g>
+<text x="64" y="270" font-size="26" font-weight="500" fill="#fafafa" class="fade" style="animation-delay:0.25s">IT Student · Web Developer · Linux</text>
+<g class="fade" style="animation-delay:.4s"><rect x="64" y="294" width="116" height="32" fill="none" stroke="#3a3a3a"/><text x="122.0" y="314.9" font-size="14" fill="#8a8a8a" text-anchor="middle" font-weight="600">Philippines</text><rect x="190" y="294" width="166" height="32" fill="none" stroke="#3a3a3a"/><text x="273.0" y="314.9" font-size="14" fill="#8a8a8a" text-anchor="middle" font-weight="600">Fedora + Hyprland</text><rect x="366" y="294" width="124" height="32" fill="none" stroke="#3a3a3a"/><text x="428.0" y="314.9" font-size="14" fill="#8a8a8a" text-anchor="middle" font-weight="600">BSIT student</text></g>
 <g class="fade" style="animation-delay:.5s">
   <rect x="1016" y="280" width="120" height="16" fill="#c9434b" class="grow" style="animation-delay:.5s"/>
-  <rect x="1016" y="302" width="80" height="16" fill="#0a0a0a" class="grow" style="animation-delay:.65s"/>
-  <rect x="1016" y="324" width="40" height="16" fill="#d4d4d4" class="grow" style="animation-delay:.8s"/>
+  <rect x="1016" y="302" width="80" height="16" fill="#fafafa" class="grow" style="animation-delay:.65s"/>
+  <rect x="1016" y="324" width="40" height="16" fill="#3a3a3a" class="grow" style="animation-delay:.8s"/>
 </g>
 </svg>

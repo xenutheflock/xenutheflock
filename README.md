@@ -52,5 +52,5 @@
 </p>
 
 <p align="center">
-  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/xenutheflock/xenutheflock/output/github-snake-light.svg" width="100%" />
+  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/xenutheflock/xenutheflock/output/github-snake.svg" width="100%" />
 </p>

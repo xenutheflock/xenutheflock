@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="130" viewBox="0 0 400 130"><style>
 text { font-family: 'Inter', 'Segoe UI', Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 .mono { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; }
-.label { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; font-size: 13px; font-weight: 700; letter-spacing: 2px; fill: #6b6b6b; }
+.label { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; font-size: 13px; font-weight: 700; letter-spacing: 2px; fill: #8a8a8a; }
 .fade { animation: fade .7s ease-out backwards; }
 @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 .grow { transform-box: fill-box; transform-origin: left; animation: grow 1s cubic-bezier(.2,.8,.2,1) backwards; }
 @keyframes grow { from { transform: scaleX(0); } }
 .cursor { animation: blink 1s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
-</style><rect x="1" y="1" width="398" height="128" fill="#ffffff" stroke="#e5e5e5" stroke-width="2"/>
-<g ><rect x="30" y="33" width="64" height="64" fill="none" stroke="#e5e5e5" stroke-width="1.5"/><g transform="translate(46.0 49.0) scale(1.3333)" fill="#0a0a0a"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></g></g>
-<text x="114" y="58" font-size="12" font-weight="700" letter-spacing="2" fill="#6b6b6b" class="mono">FACEBOOK</text>
-<text x="114" y="86" font-size="20" font-weight="700" fill="#0a0a0a">idzill</text>
-<text x="370" y="72" font-size="22" fill="#6b6b6b" text-anchor="end">→</text>
+</style><rect x="1" y="1" width="398" height="128" fill="#0a0a0a" stroke="#262626" stroke-width="2"/>
+<g ><rect x="30" y="33" width="64" height="64" fill="none" stroke="#262626" stroke-width="1.5"/><g transform="translate(46.0 49.0) scale(1.3333)" fill="#fafafa"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></g></g>
+<text x="114" y="58" font-size="12" font-weight="700" letter-spacing="2" fill="#8a8a8a" class="mono">FACEBOOK</text>
+<text x="114" y="86" font-size="20" font-weight="700" fill="#fafafa">idzill</text>
+<text x="370" y="72" font-size="22" fill="#8a8a8a" text-anchor="end">→</text>
 </svg>
