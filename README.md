@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <img src="profile-summary-card-output/minimal/3-stats.svg?v=9ba75d89" width="49.4%" alt="GitHub stats" />
+  <img src="profile-summary-card-output/minimal/3-stats.svg?v=7984b9f2" width="49.4%" alt="GitHub stats" />
   <img src="profile-summary-card-output/minimal/4-productive-time.svg?v=1de26996" width="49.4%" alt="Commits by hour" />
 </p>
 
